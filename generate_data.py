@@ -110,7 +110,7 @@ def main():
     date_str = current_date.strftime('%Y-%m-%d')
         
     # Проверяем, не воскресенье ли сегодня
-    if current_date.weekday() != 6:  
+    if current_date.weekday() != 1:  
             
         total_files = 0
     
