@@ -1,0 +1,19 @@
+-- public.sales определение
+
+-- Drop table
+
+-- DROP TABLE public.sales;
+
+CREATE TABLE public.sales (
+	id serial4 NOT NULL,
+	doc_id varchar(10) NOT NULL,
+	shop_num int4 NOT NULL,
+	cash_num int4 NOT NULL,
+	sale_date date NOT NULL,
+	item varchar(200) NOT NULL,
+	category varchar(100) NOT NULL,
+	amount int4 NOT NULL,
+	price numeric(10, 2) NOT NULL,
+	discount numeric(10, 2) DEFAULT 0 NULL,
+	CONSTRAINT sales_pkey PRIMARY KEY (id)
+);
